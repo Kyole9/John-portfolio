@@ -12,7 +12,7 @@ This is my professional portfolio website, built using HTML/CSS and hosted on AW
 - S3 (Static Website Hosting)
 - IAM (Access Control)
 - CloudFront (CDN & SSL)
-- (Optional) Route 53 for custom domain
+
 
 ## Learning Goals
 - Build & deploy using AWS
