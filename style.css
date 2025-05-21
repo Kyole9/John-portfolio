@@ -1,43 +1,114 @@
+/* General reset and layout */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f5f5f5;
   margin: 0;
   padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
   color: #333;
+  line-height: 1.6;
 }
 
 header {
-  background-color: #1f2937;
+  background: #1a202c;
   color: white;
+  padding: 2rem 1rem;
   text-align: center;
-  padding: 2rem;
 }
 
-h1 {
-  margin: 0;
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #1a202c, #2d3748);
+  color: white;
+}
+
+.hero h1 {
   font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero a {
+  background: #fbbf24;
+  color: #1a202c;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.hero a:hover {
+  background: #f59e0b;
 }
 
 section {
-  padding: 2rem;
   max-width: 800px;
-  margin: auto;
+  margin: 3rem auto;
+  padding: 0 1rem;
 }
 
 h2 {
-  color: #1f2937;
-  border-bottom: 2px solid #ddd;
+  color: #2d3748;
+  border-bottom: 2px solid #e2e8f0;
   padding-bottom: 0.5rem;
 }
 
+iframe {
+  width: 100%;
+  height: 315px;
+  border: none;
+  margin: 1rem 0;
+}
+
 ul {
-  list-style-type: square;
-  padding-left: 1.5rem;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  background: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #fbbf24;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+ul li a {
+  color: #1a202c;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+  color: #f59e0b;
 }
 
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: #e2e8f0;
+  color: #4a5568;
+  font-size: 0.9rem;
 }
 
+/* Responsive Layout */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  iframe {
+    height: 200px;
+  }
+}
